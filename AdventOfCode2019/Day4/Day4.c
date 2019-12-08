@@ -1,97 +1,112 @@
 /* Headers */
 #include<stdio.h> /* For Printf*/
-#include <string.h>
+#include <string.h> /* For MEMCPY */
 
 /* Defines */
 #define Minimum_Number 359282
 #define Maximum_Number 820401
 
 /* GLobal Variables */
-static long long int number = 0;
+static long long int number;
+int number_split[6];
+int number_of_passwords=0;
+int number_of_passwords_2=0;
 
-void SplitNumberIntoDigits(long long int number, int *a);
-int CheckIfTwoAdjaccentDigitsAreSame(int *a);
-int CheckIfDigitsAscending(int *a);
+void SplitNumberIntoDigits();
+int CheckIfTwoAdjaccentDigitsAreSame();
+int CheckIfDigitsAscending();
+int CheckLargestRepNoRepsOnly2Times();
 
-void SplitNumberIntoDigits(long long int number, int *a)
+int CheckLargestRepNoRepsOnly2Times()
 {
-    int i;
-    for (i=0; i<6; i++)
-    {
-        a[5-i]=number%10;
-        number=number/10;
-    }
-}
-
-int CheckIfTwoAdjaccentDigitsAreSame(int *a)
-{
-    int LoopCounter, RetVal=0;
-    int number_of_occurances[10]={0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
+    int repeating_count[10];
+    int LoopCounter;
+    
+    printf("Number Is: %lld\n", number);
+    memset(repeating_count, 0, sizeof(repeating_count));
     
     for(LoopCounter=0; LoopCounter<6; LoopCounter++)
     {
-        number_of_occurances[a[LoopCounter]] +=1;
-        if((a[LoopCounter]==a[LoopCounter+1]) && (LoopCounter!=5))
+            repeating_count[number_split[LoopCounter]]+=1;
+            if(repeating_count[number_split[LoopCounter]] > 1)
+            {
+                printf("RepeatingCount of %d is %d\n", number_split[LoopCounter], repeating_count[number_split[LoopCounter]]);
+            }
+    }
+    for(LoopCounter = 9; LoopCounter>=0; LoopCounter--)
+    {
+        if(2==repeating_count[LoopCounter])
+        {
+            printf("Number is good!!\n");
+            return 1;
+        }
+        else
+        {
+            
+        }
+    }
+    printf("Number is bad!!\n");
+    return 0;
+}
+
+void SplitNumberIntoDigits()
+{
+    int i, number_temp;
+    number_temp=number;
+    for (i=0; i<6; i++)
+    {
+        number_split[5-i]=number_temp%10;
+        number_temp=number_temp/10;
+    }
+}
+
+int CheckIfTwoAdjaccentDigitsAreSame()
+{
+    int LoopCounter, RetVal=0;
+    
+    for(LoopCounter=0; LoopCounter<6; LoopCounter++)
+    {
+        if((number_split[LoopCounter]==number_split[LoopCounter+1]) && (LoopCounter!=5))
         {
             RetVal = 1;
         }
     }
-
-    if(1 == RetVal)
-    {
-        RetVal = 0;
-        for(LoopCounter=9; LoopCounter>=0; LoopCounter--)
-        {
-            if(number_of_occurances[LoopCounter] > 1)
-            {
-                //Check if this largest repeating number only repeats twice
-                if(number_of_occurances[LoopCounter] == 2)
-                {
-                    return 1;
-                }
-            }
-            else
-            {
-                // Move Onto Next Number;
-            }
-        }
-    }
-    return 0;
+    return RetVal;
 }
 
-int CheckIfDigitsAscending(int *a)
+int CheckIfDigitsAscending()
 {
-    int i, flag=1;
+    int i, RetVal=1;
     for(i=0; i<5; i++)
     {
-        if(a[i]>a[i+1])
+        if(number_split[i]>number_split[i+1])
         {
-            flag = 0;
+            RetVal = 0;
         }
     }
-    return flag;
+    return RetVal;
 }
 
 int main()
 {
-    int number_split[6];
-    
-    int i;
-    int number_of_passwords=0;
-    
     for(number=Minimum_Number; number<=Maximum_Number; number++)
     {
-        //printf("CurrentNumberIs:%d\n", number);
-        SplitNumberIntoDigits(number, number_split);
-        if(1 == CheckIfDigitsAscending(number_split))
+        //printf("Number Is:%d\n", number);
+        SplitNumberIntoDigits();
+        if(1 == CheckIfDigitsAscending())
         {
-            if(1 == CheckIfTwoAdjaccentDigitsAreSame(number_split))
+            if(1 == CheckIfTwoAdjaccentDigitsAreSame())
             {
                 number_of_passwords++;
+                if(1 == CheckLargestRepNoRepsOnly2Times())
+                {
+                    number_of_passwords_2++;
+                }
             }
         }
     }
-    printf("Number Of Passwords:%d", number_of_passwords);
+    printf("Number Of Passwords Part1:%d\n", number_of_passwords);
+    printf("Number Of Passwords Part2:%d\n", number_of_passwords_2);
     
     return 0;
 }
