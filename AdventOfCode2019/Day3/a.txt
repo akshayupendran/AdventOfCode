@@ -1,2 +1,0 @@
-MinX:-9433, MaxX:2253, MinY:-2154, MaxY:9225
-RangeOfX:11686, RangeOfY:11379

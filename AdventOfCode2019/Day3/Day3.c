@@ -39,7 +39,6 @@ void GetInputsFromFile()
 {
     int i;
     
-    //Get Inputs for wire 1
     for(i=0; i<NUMBER_OF_INPUTS_BY_2; i++)
     {
         if(i == (NUMBER_OF_INPUTS_BY_2-1))
@@ -52,7 +51,6 @@ void GetInputsFromFile()
         }
     }
     
-    //Get Inputs for wire 2
     for(i=0; i<NUMBER_OF_INPUTS_BY_2; i++)
     {
         if(i == (NUMBER_OF_INPUTS_BY_2-1))
@@ -279,9 +277,7 @@ void FindAndPrintMaxMinXYValues()
 int main()
 {
     GetInputsFromFile();
-    //PrintInputs();
     ConvertInputsToCoordinates();
-    //PrintCoords();
     FindAndPrintMaxMinXYValues();
     return 0;
 }
