@@ -1,16 +1,26 @@
 #include <stdio.h>
 
-// input as per text file
-int mass[100];
+#define NUMBER_OF_INPUTS 100u
+// Mass of 100 input modules
+int mass[NUMBER_OF_INPUTS];
+int CalculateFuel2(int mass_of_input);
+int CalculateFuel1(int mass_of_input);
 
-long long int CalculateFuel(long long int a)
+int CalculateFuel1(int mass_of_input)
 {
-    int b;
-    b=((a/3)-2);
-    if(b<=0)
+    int fuel_required;
+    fuel_required=((mass_of_input/3)-2);
+    return fuel_required;
+}
+
+int CalculateFuel2(int mass_of_input)
+{
+    int fuel_required;
+    fuel_required=((mass_of_input/3)-2);
+    if(fuel_required<=0)
         return 0;
     else
-        return (b+CalculateFuel(b));
+        return (fuel_required+CalculateFuel2(fuel_required));
 }
 
 int main()
@@ -23,16 +33,23 @@ int main()
     for(i=0; i<100; i++)
     {
         scanf("%d", &mass[i]); // get input into array
-        //printf("%d\n", mass[i]); //verify input by printing
     }
 
-    //calculate fuel for each mass
+    //calculate fuel 1 for each mass
     for(i=0; i<100; i++)
     {
-        fuel[i] = CalculateFuel(mass[i]);
-        printf("%lld\n",fuel[i]);
+        fuel[i] = CalculateFuel1(mass[i]);
         total_fuel_required+=fuel[i];
     }
-    printf("%lld", total_fuel_required);
+    printf("Solution to Part1:%lld\n", total_fuel_required);
+    
+    // Calculate Fuel for Part 2 for each mass
+    total_fuel_required=0;
+    for(i=0; i<100; i++)
+    {
+        fuel[i] = CalculateFuel2(mass[i]);
+        total_fuel_required+=fuel[i];
+    }
+    printf("Solution to Part2:%lld\n", total_fuel_required);
     return 0;
 }
