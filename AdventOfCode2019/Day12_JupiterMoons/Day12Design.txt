@@ -1,0 +1,9 @@
+tracking the four largest moons: Io, Europa, Ganymede, and Callisto.
+position of each moon (your puzzle input).
+simulate their motion so you can avoid them.
+Each moon has a 3-dimensional position (x, y, and z) and a 3-dimensional velocity. The position of each moon is given in your scan; the x, y, and z velocity of each moon starts at 0.
+Simulate the motion of the moons in time steps.
+Within each time step, first update the velocity of every moon by applying gravity.
+update the position of every moon by applying velocity.
+Time progresses by one step once all of the positions are updated.
+Velocity can be +1, -1 or 0

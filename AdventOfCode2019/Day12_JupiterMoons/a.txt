@@ -1,0 +1,510 @@
+After 0 steps:
+pos=<x=-8, y=-10, z=0>, vel=<x=0, y=0, z=0>
+pos=<x=5, y=5, z=10>, vel=<x=0, y=0, z=0>
+pos=<x=2, y=-7, z=3>, vel=<x=0, y=0, z=0>
+pos=<x=9, y=-8, z=-3>, vel=<x=0, y=0, z=0>
+After 1 steps:
+pos=<x=-5, y=-7, z=1>, vel=<x=3, y=3, z=1>
+pos=<x=4, y=2, z=7>, vel=<x=-1, y=-3, z=-3>
+pos=<x=3, y=-8, z=2>, vel=<x=1, y=-1, z=-1>
+pos=<x=6, y=-7, z=0>, vel=<x=-3, y=1, z=3>
+After 2 steps:
+pos=<x=1, y=-4, z=3>, vel=<x=6, y=3, z=2>
+pos=<x=2, y=-4, z=1>, vel=<x=-2, y=-6, z=-6>
+pos=<x=5, y=-6, z=0>, vel=<x=2, y=2, z=-2>
+pos=<x=0, y=-6, z=6>, vel=<x=-6, y=1, z=6>
+After 3 steps:
+pos=<x=8, y=-3, z=4>, vel=<x=7, y=1, z=1>
+pos=<x=-1, y=-12, z=-4>, vel=<x=-3, y=-8, z=-5>
+pos=<x=4, y=-2, z=1>, vel=<x=-1, y=4, z=1>
+pos=<x=-3, y=-3, z=9>, vel=<x=-3, y=3, z=3>
+After 4 steps:
+pos=<x=12, y=-2, z=4>, vel=<x=4, y=1, z=0>
+pos=<x=-3, y=-17, z=-6>, vel=<x=-2, y=-5, z=-2>
+pos=<x=2, y=-1, z=3>, vel=<x=-2, y=1, z=2>
+pos=<x=-3, y=0, z=9>, vel=<x=0, y=3, z=0>
+After 5 steps:
+pos=<x=13, y=0, z=3>, vel=<x=1, y=2, z=-1>
+pos=<x=-3, y=-19, z=-5>, vel=<x=0, y=-2, z=1>
+pos=<x=-1, y=-1, z=6>, vel=<x=-3, y=0, z=3>
+pos=<x=-1, y=0, z=6>, vel=<x=2, y=0, z=-3>
+After 6 steps:
+pos=<x=11, y=0, z=3>, vel=<x=-2, y=0, z=0>
+pos=<x=0, y=-18, z=-1>, vel=<x=3, y=1, z=4>
+pos=<x=-4, y=0, z=7>, vel=<x=-3, y=1, z=1>
+pos=<x=1, y=-2, z=1>, vel=<x=2, y=-2, z=-5>
+After 7 steps:
+pos=<x=6, y=-2, z=2>, vel=<x=-5, y=-2, z=-1>
+pos=<x=4, y=-14, z=6>, vel=<x=4, y=4, z=7>
+pos=<x=-4, y=-1, z=5>, vel=<x=0, y=-1, z=-2>
+pos=<x=2, y=-3, z=-3>, vel=<x=1, y=-1, z=-4>
+After 8 steps:
+pos=<x=-2, y=-5, z=2>, vel=<x=-8, y=-3, z=0>
+pos=<x=7, y=-7, z=10>, vel=<x=3, y=7, z=4>
+pos=<x=-1, y=-5, z=2>, vel=<x=3, y=-4, z=-3>
+pos=<x=4, y=-3, z=-4>, vel=<x=2, y=0, z=-1>
+After 9 steps:
+pos=<x=-7, y=-8, z=2>, vel=<x=-5, y=-3, z=0>
+pos=<x=7, y=3, z=11>, vel=<x=0, y=10, z=1>
+pos=<x=3, y=-9, z=-1>, vel=<x=4, y=-4, z=-3>
+pos=<x=5, y=-6, z=-2>, vel=<x=1, y=-3, z=2>
+After 10 steps:
+pos=<x=-9, y=-10, z=1>, vel=<x=-2, y=-2, z=-1>
+pos=<x=4, y=10, z=9>, vel=<x=-3, y=7, z=-2>
+pos=<x=8, y=-10, z=-3>, vel=<x=5, y=-1, z=-2>
+pos=<x=5, y=-10, z=3>, vel=<x=0, y=-4, z=5>
+After 11 steps:
+pos=<x=-8, y=-11, z=1>, vel=<x=1, y=-1, z=0>
+pos=<x=2, y=14, z=4>, vel=<x=-2, y=4, z=-5>
+pos=<x=10, y=-10, z=-2>, vel=<x=2, y=0, z=1>
+pos=<x=4, y=-13, z=7>, vel=<x=-1, y=-3, z=4>
+After 12 steps:
+pos=<x=-4, y=-11, z=2>, vel=<x=4, y=0, z=1>
+pos=<x=1, y=15, z=-2>, vel=<x=-1, y=1, z=-6>
+pos=<x=9, y=-11, z=2>, vel=<x=-1, y=-1, z=4>
+pos=<x=2, y=-13, z=8>, vel=<x=-2, y=0, z=1>
+After 13 steps:
+pos=<x=3, y=-11, z=3>, vel=<x=7, y=0, z=1>
+pos=<x=1, y=13, z=-5>, vel=<x=0, y=-2, z=-3>
+pos=<x=5, y=-12, z=6>, vel=<x=-4, y=-1, z=4>
+pos=<x=-1, y=-10, z=6>, vel=<x=-3, y=3, z=-2>
+After 14 steps:
+pos=<x=9, y=-10, z=5>, vel=<x=6, y=1, z=2>
+pos=<x=2, y=8, z=-5>, vel=<x=1, y=-5, z=0>
+pos=<x=-2, y=-10, z=8>, vel=<x=-7, y=2, z=2>
+pos=<x=-1, y=-8, z=2>, vel=<x=0, y=2, z=-4>
+After 15 steps:
+pos=<x=12, y=-7, z=6>, vel=<x=3, y=3, z=1>
+pos=<x=2, y=0, z=-2>, vel=<x=0, y=-8, z=3>
+pos=<x=-6, y=-6, z=7>, vel=<x=-4, y=4, z=-1>
+pos=<x=0, y=-7, z=-1>, vel=<x=1, y=1, z=-3>
+After 16 steps:
+pos=<x=12, y=-2, z=6>, vel=<x=0, y=5, z=0>
+pos=<x=1, y=-11, z=4>, vel=<x=-1, y=-11, z=6>
+pos=<x=-7, y=-3, z=3>, vel=<x=-1, y=3, z=-4>
+pos=<x=2, y=-4, z=-3>, vel=<x=2, y=3, z=-2>
+After 17 steps:
+pos=<x=9, y=0, z=3>, vel=<x=-3, y=2, z=-3>
+pos=<x=1, y=-19, z=9>, vel=<x=0, y=-8, z=5>
+pos=<x=-5, y=-1, z=0>, vel=<x=2, y=2, z=-3>
+pos=<x=3, y=0, z=-2>, vel=<x=1, y=4, z=1>
+After 18 steps:
+pos=<x=3, y=0, z=-1>, vel=<x=-6, y=0, z=-4>
+pos=<x=2, y=-24, z=11>, vel=<x=1, y=-5, z=2>
+pos=<x=0, y=2, z=-2>, vel=<x=5, y=3, z=-2>
+pos=<x=3, y=2, z=2>, vel=<x=0, y=2, z=4>
+After 19 steps:
+pos=<x=-5, y=1, z=-4>, vel=<x=-8, y=1, z=-3>
+pos=<x=4, y=-26, z=10>, vel=<x=2, y=-2, z=-1>
+pos=<x=8, y=3, z=-1>, vel=<x=8, y=1, z=1>
+pos=<x=1, y=2, z=5>, vel=<x=-2, y=0, z=3>
+After 20 steps:
+pos=<x=-10, y=3, z=-4>, vel=<x=-5, y=2, z=0>
+pos=<x=5, y=-25, z=6>, vel=<x=1, y=1, z=-4>
+pos=<x=13, y=1, z=1>, vel=<x=5, y=-2, z=2>
+pos=<x=0, y=1, z=7>, vel=<x=-1, y=-1, z=2>
+After 21 steps:
+pos=<x=-12, y=2, z=-1>, vel=<x=-2, y=-1, z=3>
+pos=<x=5, y=-21, z=1>, vel=<x=0, y=4, z=-5>
+pos=<x=15, y=-1, z=4>, vel=<x=2, y=-2, z=3>
+pos=<x=0, y=0, z=6>, vel=<x=0, y=-1, z=-1>
+After 22 steps:
+pos=<x=-11, y=-2, z=5>, vel=<x=1, y=-4, z=6>
+pos=<x=4, y=-14, z=-3>, vel=<x=-1, y=7, z=-4>
+pos=<x=14, y=-2, z=6>, vel=<x=-1, y=-1, z=2>
+pos=<x=1, y=-2, z=2>, vel=<x=1, y=-2, z=-4>
+After 23 steps:
+pos=<x=-7, y=-7, z=10>, vel=<x=4, y=-5, z=5>
+pos=<x=2, y=-4, z=-4>, vel=<x=-2, y=10, z=-1>
+pos=<x=10, y=-4, z=5>, vel=<x=-4, y=-2, z=-1>
+pos=<x=3, y=-5, z=-1>, vel=<x=2, y=-3, z=-3>
+After 24 steps:
+pos=<x=0, y=-9, z=12>, vel=<x=7, y=-2, z=2>
+pos=<x=1, y=4, z=-2>, vel=<x=-1, y=8, z=2>
+pos=<x=3, y=-8, z=3>, vel=<x=-7, y=-4, z=-2>
+pos=<x=4, y=-7, z=-3>, vel=<x=1, y=-2, z=-2>
+After 25 steps:
+pos=<x=10, y=-8, z=11>, vel=<x=10, y=1, z=-1>
+pos=<x=1, y=9, z=1>, vel=<x=0, y=5, z=3>
+pos=<x=-5, y=-11, z=0>, vel=<x=-8, y=-3, z=-3>
+pos=<x=2, y=-10, z=-2>, vel=<x=-2, y=-3, z=1>
+After 26 steps:
+pos=<x=17, y=-8, z=7>, vel=<x=7, y=0, z=-4>
+pos=<x=2, y=11, z=3>, vel=<x=1, y=2, z=2>
+pos=<x=-10, y=-11, z=-2>, vel=<x=-5, y=0, z=-2>
+pos=<x=-1, y=-12, z=2>, vel=<x=-3, y=-2, z=4>
+After 27 steps:
+pos=<x=21, y=-9, z=0>, vel=<x=4, y=-1, z=-7>
+pos=<x=2, y=10, z=4>, vel=<x=0, y=-1, z=1>
+pos=<x=-12, y=-10, z=-1>, vel=<x=-2, y=1, z=1>
+pos=<x=-3, y=-11, z=7>, vel=<x=-2, y=1, z=5>
+After 28 steps:
+pos=<x=22, y=-11, z=-6>, vel=<x=1, y=-2, z=-6>
+pos=<x=1, y=6, z=4>, vel=<x=-1, y=-4, z=0>
+pos=<x=-11, y=-8, z=3>, vel=<x=1, y=2, z=4>
+pos=<x=-4, y=-7, z=9>, vel=<x=-1, y=4, z=2>
+After 29 steps:
+pos=<x=20, y=-10, z=-9>, vel=<x=-2, y=1, z=-3>
+pos=<x=-1, y=-1, z=3>, vel=<x=-2, y=-7, z=-1>
+pos=<x=-7, y=-5, z=8>, vel=<x=4, y=3, z=5>
+pos=<x=-4, y=-4, z=8>, vel=<x=0, y=3, z=-1>
+After 30 steps:
+pos=<x=15, y=-6, z=-9>, vel=<x=-5, y=4, z=0>
+pos=<x=-4, y=-11, z=3>, vel=<x=-3, y=-10, z=0>
+pos=<x=0, y=-1, z=11>, vel=<x=7, y=4, z=3>
+pos=<x=-3, y=-2, z=5>, vel=<x=1, y=2, z=-3>
+After 31 steps:
+pos=<x=7, y=-1, z=-6>, vel=<x=-8, y=5, z=3>
+pos=<x=-4, y=-18, z=4>, vel=<x=0, y=-7, z=1>
+pos=<x=6, y=0, z=11>, vel=<x=6, y=1, z=0>
+pos=<x=-1, y=-1, z=1>, vel=<x=2, y=1, z=-4>
+After 32 steps:
+pos=<x=-4, y=4, z=0>, vel=<x=-11, y=5, z=6>
+pos=<x=-1, y=-22, z=4>, vel=<x=3, y=-4, z=0>
+pos=<x=11, y=-2, z=8>, vel=<x=5, y=-2, z=-3>
+pos=<x=2, y=0, z=-2>, vel=<x=3, y=1, z=-3>
+After 33 steps:
+pos=<x=-12, y=6, z=7>, vel=<x=-8, y=2, z=7>
+pos=<x=3, y=-23, z=3>, vel=<x=4, y=-1, z=-1>
+pos=<x=13, y=-3, z=2>, vel=<x=2, y=-1, z=-6>
+pos=<x=4, y=0, z=-2>, vel=<x=2, y=0, z=0>
+After 34 steps:
+pos=<x=-17, y=5, z=11>, vel=<x=-5, y=-1, z=4>
+pos=<x=8, y=-21, z=1>, vel=<x=5, y=2, z=-2>
+pos=<x=12, y=-3, z=-3>, vel=<x=-1, y=0, z=-5>
+pos=<x=5, y=-1, z=1>, vel=<x=1, y=-1, z=3>
+After 35 steps:
+pos=<x=-19, y=1, z=12>, vel=<x=-2, y=-4, z=1>
+pos=<x=12, y=-16, z=-1>, vel=<x=4, y=5, z=-2>
+pos=<x=8, y=-2, z=-5>, vel=<x=-4, y=1, z=-2>
+pos=<x=7, y=-3, z=4>, vel=<x=2, y=-2, z=3>
+After 36 steps:
+pos=<x=-18, y=-6, z=10>, vel=<x=1, y=-7, z=-2>
+pos=<x=13, y=-8, z=-2>, vel=<x=1, y=8, z=-1>
+pos=<x=3, y=-2, z=-4>, vel=<x=-5, y=0, z=1>
+pos=<x=10, y=-4, z=6>, vel=<x=3, y=-1, z=2>
+After 37 steps:
+pos=<x=-14, y=-12, z=5>, vel=<x=4, y=-6, z=-5>
+pos=<x=11, y=3, z=-2>, vel=<x=-2, y=11, z=0>
+pos=<x=-1, y=-5, z=0>, vel=<x=-4, y=-3, z=4>
+pos=<x=12, y=-6, z=7>, vel=<x=2, y=-2, z=1>
+After 38 steps:
+pos=<x=-7, y=-15, z=-1>, vel=<x=7, y=-3, z=-6>
+pos=<x=8, y=11, z=1>, vel=<x=-3, y=8, z=3>
+pos=<x=-4, y=-9, z=5>, vel=<x=-3, y=-4, z=5>
+pos=<x=11, y=-7, z=5>, vel=<x=-1, y=-1, z=-2>
+After 39 steps:
+pos=<x=3, y=-15, z=-4>, vel=<x=10, y=0, z=-3>
+pos=<x=4, y=16, z=5>, vel=<x=-4, y=5, z=4>
+pos=<x=-6, y=-12, z=8>, vel=<x=-2, y=-3, z=3>
+pos=<x=7, y=-9, z=1>, vel=<x=-4, y=-2, z=-4>
+After 40 steps:
+pos=<x=14, y=-12, z=-4>, vel=<x=11, y=3, z=0>
+pos=<x=-1, y=18, z=8>, vel=<x=-5, y=2, z=3>
+pos=<x=-5, y=-14, z=8>, vel=<x=1, y=-2, z=0>
+pos=<x=0, y=-12, z=-2>, vel=<x=-7, y=-3, z=-3>
+After 41 steps:
+pos=<x=22, y=-9, z=-1>, vel=<x=8, y=3, z=3>
+pos=<x=-5, y=17, z=9>, vel=<x=-4, y=-1, z=1>
+pos=<x=-1, y=-13, z=6>, vel=<x=4, y=1, z=-2>
+pos=<x=-8, y=-15, z=-4>, vel=<x=-8, y=-3, z=-2>
+After 42 steps:
+pos=<x=27, y=-7, z=3>, vel=<x=5, y=2, z=4>
+pos=<x=-8, y=13, z=7>, vel=<x=-3, y=-4, z=-2>
+pos=<x=2, y=-11, z=3>, vel=<x=3, y=2, z=-3>
+pos=<x=-13, y=-15, z=-3>, vel=<x=-5, y=0, z=1>
+After 43 steps:
+pos=<x=29, y=-6, z=7>, vel=<x=2, y=1, z=4>
+pos=<x=-10, y=6, z=2>, vel=<x=-2, y=-7, z=-5>
+pos=<x=4, y=-8, z=0>, vel=<x=2, y=3, z=-3>
+pos=<x=-15, y=-12, z=1>, vel=<x=-2, y=3, z=4>
+After 44 steps:
+pos=<x=28, y=-6, z=8>, vel=<x=-1, y=0, z=1>
+pos=<x=-11, y=-4, z=-4>, vel=<x=-1, y=-10, z=-6>
+pos=<x=5, y=-4, z=0>, vel=<x=1, y=4, z=0>
+pos=<x=-14, y=-6, z=6>, vel=<x=1, y=6, z=5>
+After 45 steps:
+pos=<x=24, y=-4, z=6>, vel=<x=-4, y=2, z=-2>
+pos=<x=-11, y=-16, z=-7>, vel=<x=0, y=-12, z=-3>
+pos=<x=5, y=-2, z=1>, vel=<x=0, y=2, z=1>
+pos=<x=-10, y=2, z=10>, vel=<x=4, y=8, z=4>
+After 46 steps:
+pos=<x=17, y=-1, z=3>, vel=<x=-7, y=3, z=-3>
+pos=<x=-8, y=-25, z=-7>, vel=<x=3, y=-9, z=0>
+pos=<x=4, y=-1, z=3>, vel=<x=-1, y=1, z=2>
+pos=<x=-5, y=7, z=11>, vel=<x=5, y=5, z=1>
+After 47 steps:
+pos=<x=7, y=2, z=0>, vel=<x=-10, y=3, z=-3>
+pos=<x=-2, y=-31, z=-4>, vel=<x=6, y=-6, z=3>
+pos=<x=2, y=0, z=5>, vel=<x=-2, y=1, z=2>
+pos=<x=1, y=9, z=9>, vel=<x=6, y=2, z=-2>
+After 48 steps:
+pos=<x=-6, y=4, z=-2>, vel=<x=-13, y=2, z=-2>
+pos=<x=7, y=-34, z=2>, vel=<x=9, y=-3, z=6>
+pos=<x=-1, y=2, z=6>, vel=<x=-3, y=2, z=1>
+pos=<x=8, y=8, z=4>, vel=<x=7, y=-1, z=-5>
+After 49 steps:
+pos=<x=-16, y=5, z=-1>, vel=<x=-10, y=1, z=1>
+pos=<x=15, y=-34, z=9>, vel=<x=8, y=0, z=7>
+pos=<x=-3, y=5, z=4>, vel=<x=-2, y=3, z=-2>
+pos=<x=12, y=4, z=-2>, vel=<x=4, y=-4, z=-6>
+After 50 steps:
+pos=<x=-23, y=4, z=1>, vel=<x=-7, y=-1, z=2>
+pos=<x=20, y=-31, z=13>, vel=<x=5, y=3, z=4>
+pos=<x=-4, y=6, z=1>, vel=<x=-1, y=1, z=-3>
+pos=<x=15, y=1, z=-5>, vel=<x=3, y=-3, z=-3>
+After 51 steps:
+pos=<x=-27, y=2, z=3>, vel=<x=-4, y=-2, z=2>
+pos=<x=22, y=-25, z=14>, vel=<x=2, y=6, z=1>
+pos=<x=-4, y=4, z=-2>, vel=<x=0, y=-2, z=-3>
+pos=<x=17, y=-1, z=-5>, vel=<x=2, y=-2, z=0>
+After 52 steps:
+pos=<x=-28, y=-1, z=4>, vel=<x=-1, y=-3, z=1>
+pos=<x=21, y=-16, z=12>, vel=<x=-1, y=9, z=-2>
+pos=<x=-3, y=-1, z=-4>, vel=<x=1, y=-5, z=-2>
+pos=<x=18, y=-2, z=-2>, vel=<x=1, y=-1, z=3>
+After 53 steps:
+pos=<x=-26, y=-6, z=4>, vel=<x=2, y=-5, z=0>
+pos=<x=17, y=-4, z=7>, vel=<x=-4, y=12, z=-5>
+pos=<x=-1, y=-8, z=-3>, vel=<x=2, y=-7, z=1>
+pos=<x=18, y=-2, z=2>, vel=<x=0, y=0, z=4>
+After 54 steps:
+pos=<x=-21, y=-10, z=3>, vel=<x=5, y=-4, z=-1>
+pos=<x=12, y=7, z=-1>, vel=<x=-5, y=11, z=-8>
+pos=<x=2, y=-12, z=1>, vel=<x=3, y=-4, z=4>
+pos=<x=15, y=-5, z=7>, vel=<x=-3, y=-3, z=5>
+After 55 steps:
+pos=<x=-13, y=-13, z=1>, vel=<x=8, y=-3, z=-2>
+pos=<x=6, y=15, z=-6>, vel=<x=-6, y=8, z=-5>
+pos=<x=6, y=-13, z=6>, vel=<x=4, y=-1, z=5>
+pos=<x=9, y=-9, z=9>, vel=<x=-6, y=-4, z=2>
+After 56 steps:
+pos=<x=-2, y=-14, z=0>, vel=<x=11, y=-1, z=-1>
+pos=<x=0, y=20, z=-8>, vel=<x=-6, y=5, z=-2>
+pos=<x=10, y=-12, z=10>, vel=<x=4, y=1, z=4>
+pos=<x=0, y=-14, z=8>, vel=<x=-9, y=-5, z=-1>
+After 57 steps:
+pos=<x=12, y=-13, z=0>, vel=<x=14, y=1, z=0>
+pos=<x=-6, y=22, z=-7>, vel=<x=-6, y=2, z=1>
+pos=<x=11, y=-12, z=11>, vel=<x=1, y=0, z=1>
+pos=<x=-9, y=-17, z=6>, vel=<x=-9, y=-3, z=-2>
+After 58 steps:
+pos=<x=23, y=-11, z=1>, vel=<x=11, y=2, z=1>
+pos=<x=-11, y=21, z=-3>, vel=<x=-5, y=-1, z=4>
+pos=<x=11, y=-13, z=9>, vel=<x=0, y=-1, z=-2>
+pos=<x=-15, y=-17, z=3>, vel=<x=-6, y=0, z=-3>
+After 59 steps:
+pos=<x=31, y=-10, z=3>, vel=<x=8, y=1, z=2>
+pos=<x=-15, y=17, z=4>, vel=<x=-4, y=-4, z=7>
+pos=<x=10, y=-13, z=4>, vel=<x=-1, y=0, z=-5>
+pos=<x=-18, y=-14, z=-1>, vel=<x=-3, y=3, z=-4>
+After 60 steps:
+pos=<x=36, y=-10, z=6>, vel=<x=5, y=0, z=3>
+pos=<x=-18, y=10, z=9>, vel=<x=-3, y=-7, z=5>
+pos=<x=8, y=-12, z=-3>, vel=<x=-2, y=1, z=-7>
+pos=<x=-18, y=-8, z=-2>, vel=<x=0, y=6, z=-1>
+After 61 steps:
+pos=<x=38, y=-9, z=8>, vel=<x=2, y=1, z=2>
+pos=<x=-19, y=0, z=11>, vel=<x=-1, y=-10, z=2>
+pos=<x=5, y=-8, z=-7>, vel=<x=-3, y=4, z=-4>
+pos=<x=-16, y=-3, z=-2>, vel=<x=2, y=5, z=0>
+After 62 steps:
+pos=<x=37, y=-5, z=9>, vel=<x=-1, y=4, z=1>
+pos=<x=-17, y=-13, z=10>, vel=<x=2, y=-13, z=-1>
+pos=<x=1, y=-3, z=-8>, vel=<x=-4, y=5, z=-1>
+pos=<x=-13, y=1, z=-1>, vel=<x=3, y=4, z=1>
+After 63 steps:
+pos=<x=33, y=0, z=9>, vel=<x=-4, y=5, z=0>
+pos=<x=-12, y=-23, z=6>, vel=<x=5, y=-10, z=-4>
+pos=<x=-4, y=1, z=-6>, vel=<x=-5, y=4, z=2>
+pos=<x=-9, y=2, z=1>, vel=<x=4, y=1, z=2>
+After 64 steps:
+pos=<x=26, y=6, z=6>, vel=<x=-7, y=6, z=-3>
+pos=<x=-4, y=-30, z=1>, vel=<x=8, y=-7, z=-5>
+pos=<x=-10, y=4, z=-1>, vel=<x=-6, y=3, z=5>
+pos=<x=-4, y=0, z=4>, vel=<x=5, y=-2, z=3>
+After 65 steps:
+pos=<x=16, y=9, z=0>, vel=<x=-10, y=3, z=-6>
+pos=<x=4, y=-34, z=-3>, vel=<x=8, y=-4, z=-4>
+pos=<x=-13, y=6, z=7>, vel=<x=-3, y=2, z=8>
+pos=<x=1, y=-1, z=6>, vel=<x=5, y=-1, z=2>
+After 66 steps:
+pos=<x=3, y=9, z=-5>, vel=<x=-13, y=0, z=-5>
+pos=<x=11, y=-35, z=-4>, vel=<x=7, y=-1, z=-1>
+pos=<x=-13, y=7, z=12>, vel=<x=0, y=1, z=5>
+pos=<x=7, y=-1, z=7>, vel=<x=6, y=0, z=1>
+After 67 steps:
+pos=<x=-9, y=6, z=-7>, vel=<x=-12, y=-3, z=-2>
+pos=<x=15, y=-33, z=-4>, vel=<x=4, y=2, z=0>
+pos=<x=-10, y=7, z=14>, vel=<x=3, y=0, z=2>
+pos=<x=12, y=0, z=7>, vel=<x=5, y=1, z=0>
+After 68 steps:
+pos=<x=-20, y=2, z=-6>, vel=<x=-11, y=-4, z=1>
+pos=<x=16, y=-28, z=-3>, vel=<x=1, y=5, z=1>
+pos=<x=-4, y=4, z=13>, vel=<x=6, y=-3, z=-1>
+pos=<x=16, y=2, z=6>, vel=<x=4, y=2, z=-1>
+After 69 steps:
+pos=<x=-28, y=-2, z=-2>, vel=<x=-8, y=-4, z=4>
+pos=<x=15, y=-20, z=-1>, vel=<x=-1, y=8, z=2>
+pos=<x=3, y=-2, z=9>, vel=<x=7, y=-6, z=-4>
+pos=<x=18, y=4, z=4>, vel=<x=2, y=2, z=-2>
+After 70 steps:
+pos=<x=-33, y=-6, z=5>, vel=<x=-5, y=-4, z=7>
+pos=<x=13, y=-9, z=2>, vel=<x=-2, y=11, z=3>
+pos=<x=11, y=-8, z=2>, vel=<x=8, y=-6, z=-7>
+pos=<x=17, y=3, z=1>, vel=<x=-1, y=-1, z=-3>
+After 71 steps:
+pos=<x=-35, y=-11, z=9>, vel=<x=-2, y=-5, z=4>
+pos=<x=10, y=5, z=5>, vel=<x=-3, y=14, z=3>
+pos=<x=20, y=-13, z=-5>, vel=<x=9, y=-5, z=-7>
+pos=<x=13, y=-1, z=1>, vel=<x=-4, y=-4, z=0>
+After 72 steps:
+pos=<x=-34, y=-15, z=10>, vel=<x=1, y=-4, z=1>
+pos=<x=8, y=16, z=7>, vel=<x=-2, y=11, z=2>
+pos=<x=26, y=-15, z=-9>, vel=<x=6, y=-2, z=-4>
+pos=<x=8, y=-6, z=2>, vel=<x=-5, y=-5, z=1>
+After 73 steps:
+pos=<x=-30, y=-17, z=8>, vel=<x=4, y=-2, z=-2>
+pos=<x=6, y=24, z=8>, vel=<x=-2, y=8, z=1>
+pos=<x=29, y=-15, z=-10>, vel=<x=3, y=0, z=-1>
+pos=<x=3, y=-12, z=4>, vel=<x=-5, y=-6, z=2>
+After 74 steps:
+pos=<x=-23, y=-16, z=4>, vel=<x=7, y=1, z=-4>
+pos=<x=3, y=29, z=7>, vel=<x=-3, y=5, z=-1>
+pos=<x=29, y=-14, z=-8>, vel=<x=0, y=1, z=2>
+pos=<x=-1, y=-19, z=7>, vel=<x=-4, y=-7, z=3>
+After 75 steps:
+pos=<x=-13, y=-14, z=1>, vel=<x=10, y=2, z=-3>
+pos=<x=-1, y=31, z=4>, vel=<x=-4, y=2, z=-3>
+pos=<x=26, y=-14, z=-3>, vel=<x=-3, y=0, z=5>
+pos=<x=-4, y=-23, z=8>, vel=<x=-3, y=-4, z=1>
+After 76 steps:
+pos=<x=0, y=-12, z=-1>, vel=<x=13, y=2, z=-2>
+pos=<x=-6, y=30, z=0>, vel=<x=-5, y=-1, z=-4>
+pos=<x=20, y=-14, z=5>, vel=<x=-6, y=0, z=8>
+pos=<x=-6, y=-24, z=6>, vel=<x=-2, y=-1, z=-2>
+After 77 steps:
+pos=<x=12, y=-11, z=0>, vel=<x=12, y=1, z=1>
+pos=<x=-9, y=26, z=-3>, vel=<x=-3, y=-4, z=-3>
+pos=<x=11, y=-13, z=12>, vel=<x=-9, y=1, z=7>
+pos=<x=-6, y=-22, z=1>, vel=<x=0, y=2, z=-5>
+After 78 steps:
+pos=<x=21, y=-11, z=2>, vel=<x=9, y=0, z=2>
+pos=<x=-9, y=19, z=-3>, vel=<x=0, y=-7, z=0>
+pos=<x=1, y=-11, z=16>, vel=<x=-10, y=2, z=4>
+pos=<x=-5, y=-17, z=-5>, vel=<x=1, y=5, z=-6>
+After 79 steps:
+pos=<x=27, y=-11, z=3>, vel=<x=6, y=0, z=1>
+pos=<x=-6, y=9, z=-2>, vel=<x=3, y=-10, z=1>
+pos=<x=-10, y=-9, z=17>, vel=<x=-11, y=2, z=1>
+pos=<x=-3, y=-9, z=-8>, vel=<x=2, y=8, z=-3>
+After 80 steps:
+pos=<x=30, y=-8, z=3>, vel=<x=3, y=3, z=0>
+pos=<x=-2, y=-4, z=0>, vel=<x=4, y=-13, z=2>
+pos=<x=-18, y=-7, z=15>, vel=<x=-8, y=2, z=-2>
+pos=<x=-2, y=-1, z=-8>, vel=<x=1, y=8, z=0>
+After 81 steps:
+pos=<x=30, y=-2, z=2>, vel=<x=0, y=6, z=-1>
+pos=<x=2, y=-18, z=3>, vel=<x=4, y=-14, z=3>
+pos=<x=-23, y=-4, z=10>, vel=<x=-5, y=3, z=-5>
+pos=<x=-1, y=4, z=-5>, vel=<x=1, y=5, z=3>
+After 82 steps:
+pos=<x=27, y=3, z=2>, vel=<x=-3, y=5, z=0>
+pos=<x=5, y=-29, z=5>, vel=<x=3, y=-11, z=2>
+pos=<x=-25, y=0, z=2>, vel=<x=-2, y=4, z=-8>
+pos=<x=1, y=6, z=1>, vel=<x=2, y=2, z=6>
+After 83 steps:
+pos=<x=21, y=7, z=2>, vel=<x=-6, y=4, z=0>
+pos=<x=7, y=-37, z=4>, vel=<x=2, y=-8, z=-1>
+pos=<x=-24, y=5, z=-6>, vel=<x=1, y=5, z=-8>
+pos=<x=4, y=5, z=10>, vel=<x=3, y=-1, z=9>
+After 84 steps:
+pos=<x=12, y=8, z=3>, vel=<x=-9, y=1, z=1>
+pos=<x=8, y=-42, z=2>, vel=<x=1, y=-5, z=-2>
+pos=<x=-20, y=10, z=-11>, vel=<x=4, y=5, z=-5>
+pos=<x=8, y=4, z=16>, vel=<x=4, y=-1, z=6>
+After 85 steps:
+pos=<x=0, y=8, z=3>, vel=<x=-12, y=0, z=0>
+pos=<x=9, y=-44, z=1>, vel=<x=1, y=-2, z=-1>
+pos=<x=-13, y=12, z=-13>, vel=<x=7, y=2, z=-2>
+pos=<x=12, y=4, z=19>, vel=<x=4, y=0, z=3>
+After 86 steps:
+pos=<x=-11, y=7, z=2>, vel=<x=-11, y=-1, z=-1>
+pos=<x=9, y=-43, z=1>, vel=<x=0, y=1, z=0>
+pos=<x=-3, y=11, z=-12>, vel=<x=10, y=-1, z=1>
+pos=<x=13, y=5, z=19>, vel=<x=1, y=1, z=0>
+After 87 steps:
+pos=<x=-19, y=5, z=0>, vel=<x=-8, y=-2, z=-2>
+pos=<x=8, y=-39, z=2>, vel=<x=-1, y=4, z=1>
+pos=<x=8, y=7, z=-8>, vel=<x=11, y=-4, z=4>
+pos=<x=11, y=7, z=16>, vel=<x=-2, y=2, z=-3>
+After 88 steps:
+pos=<x=-24, y=4, z=-1>, vel=<x=-5, y=-1, z=-1>
+pos=<x=7, y=-32, z=2>, vel=<x=-1, y=7, z=0>
+pos=<x=19, y=1, z=-1>, vel=<x=11, y=-6, z=7>
+pos=<x=6, y=7, z=10>, vel=<x=-5, y=0, z=-6>
+After 89 steps:
+pos=<x=-26, y=2, z=0>, vel=<x=-2, y=-2, z=1>
+pos=<x=5, y=-22, z=1>, vel=<x=-2, y=10, z=-1>
+pos=<x=27, y=-4, z=8>, vel=<x=8, y=-5, z=9>
+pos=<x=2, y=4, z=1>, vel=<x=-4, y=-3, z=-9>
+After 90 steps:
+pos=<x=-25, y=-1, z=4>, vel=<x=1, y=-3, z=4>
+pos=<x=2, y=-9, z=0>, vel=<x=-3, y=13, z=-1>
+pos=<x=32, y=-8, z=14>, vel=<x=5, y=-4, z=6>
+pos=<x=-1, y=-2, z=-8>, vel=<x=-3, y=-6, z=-9>
+After 91 steps:
+pos=<x=-21, y=-7, z=7>, vel=<x=4, y=-6, z=3>
+pos=<x=-2, y=7, z=0>, vel=<x=-4, y=16, z=0>
+pos=<x=34, y=-11, z=17>, vel=<x=2, y=-3, z=3>
+pos=<x=-3, y=-9, z=-14>, vel=<x=-2, y=-7, z=-6>
+After 92 steps:
+pos=<x=-14, y=-14, z=9>, vel=<x=7, y=-7, z=2>
+pos=<x=-7, y=20, z=1>, vel=<x=-5, y=13, z=1>
+pos=<x=33, y=-11, z=17>, vel=<x=-1, y=0, z=0>
+pos=<x=-4, y=-15, z=-17>, vel=<x=-1, y=-6, z=-3>
+After 93 steps:
+pos=<x=-4, y=-20, z=10>, vel=<x=10, y=-6, z=1>
+pos=<x=-11, y=30, z=3>, vel=<x=-4, y=10, z=2>
+pos=<x=29, y=-12, z=14>, vel=<x=-4, y=-1, z=-3>
+pos=<x=-6, y=-18, z=-17>, vel=<x=-2, y=-3, z=0>
+After 94 steps:
+pos=<x=5, y=-23, z=10>, vel=<x=9, y=-3, z=0>
+pos=<x=-12, y=37, z=6>, vel=<x=-1, y=7, z=3>
+pos=<x=22, y=-14, z=8>, vel=<x=-7, y=-2, z=-6>
+pos=<x=-7, y=-20, z=-14>, vel=<x=-1, y=-2, z=3>
+After 95 steps:
+pos=<x=13, y=-23, z=7>, vel=<x=8, y=0, z=-3>
+pos=<x=-10, y=41, z=10>, vel=<x=2, y=4, z=4>
+pos=<x=12, y=-17, z=1>, vel=<x=-10, y=-3, z=-7>
+pos=<x=-7, y=-21, z=-8>, vel=<x=0, y=-1, z=6>
+After 96 steps:
+pos=<x=18, y=-20, z=3>, vel=<x=5, y=3, z=-4>
+pos=<x=-5, y=42, z=11>, vel=<x=5, y=1, z=1>
+pos=<x=1, y=-21, z=-5>, vel=<x=-11, y=-4, z=-6>
+pos=<x=-6, y=-21, z=1>, vel=<x=1, y=0, z=9>
+After 97 steps:
+pos=<x=20, y=-18, z=-2>, vel=<x=2, y=2, z=-5>
+pos=<x=1, y=40, z=9>, vel=<x=6, y=-2, z=-2>
+pos=<x=-11, y=-23, z=-8>, vel=<x=-12, y=-2, z=-3>
+pos=<x=-2, y=-19, z=11>, vel=<x=4, y=2, z=10>
+After 98 steps:
+pos=<x=19, y=-17, z=-6>, vel=<x=-1, y=1, z=-4>
+pos=<x=6, y=35, z=6>, vel=<x=5, y=-5, z=-3>
+pos=<x=-20, y=-22, z=-8>, vel=<x=-9, y=1, z=0>
+pos=<x=3, y=-16, z=18>, vel=<x=5, y=3, z=7>
+After 99 steps:
+pos=<x=15, y=-15, z=-9>, vel=<x=-4, y=2, z=-3>
+pos=<x=10, y=27, z=2>, vel=<x=4, y=-8, z=-4>
+pos=<x=-26, y=-18, z=-5>, vel=<x=-6, y=4, z=3>
+pos=<x=9, y=-14, z=22>, vel=<x=6, y=2, z=4>
+After 100 steps:
+pos=<x=8, y=-12, z=-9>, vel=<x=-7, y=3, z=0>
+pos=<x=13, y=16, z=-3>, vel=<x=3, y=-11, z=-5>
+pos=<x=-29, y=-11, z=-1>, vel=<x=-3, y=7, z=4>
+pos=<x=16, y=-13, z=23>, vel=<x=7, y=1, z=1>
+Energy after 100 steps:
+pot:  8 + -12 +  -9 = 29;   kin: -7 +  3 + 0 = 10;   total: 29 * 10 = 290
+pot:  13 + 16 +  -3 = 32;   kin: 3 +  -11 + -5 = 19;   total: 32 * 19 = 608
+pot:  -29 + -11 +  -1 = 41;   kin: -3 +  7 + 4 = 14;   total: 41 * 14 = 574
+pot:  16 + -13 +  23 = 52;   kin: 7 +  1 + 1 = 9;   total: 52 * 9 = 468
