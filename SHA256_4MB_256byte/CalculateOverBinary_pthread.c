@@ -7,14 +7,18 @@
 #include <openssl/evp.h>
 /* Use Low Level header in extreme case*/
 /* #include <openssl/sha.h> */
+#include <pthread.h>
 
 /* Configuration Defines */
 /* #define CREATE_BINARY_FILE */
+#define MAX_CORES 8
 
 /* Variables */
-FILE *fp;
-unsigned char md_value_global[16384][32];
-long int counter=0;
+static FILE *fp;
+static unsigned char md_value_global[16384][32];
+static long int counter=-1;
+static pthread_mutex_t mutex = PTHREAD_MUTEX_INITIALIZER;
+static pthread_t *thread_group;
 
 /* Declarations */
 #ifdef CREATE_BINARY_FILE
@@ -61,15 +65,17 @@ void cleanup()
     {
         exit(EXIT_FAILURE);
     }
+    free(thread_group);
 }
 
 void Hash256Bytes(char *Message2Hash, unsigned char *md_value, int SizeOfMessage)
 {
+    printf("Current Counter Value is: %ld\n", counter);
     /* Refer man EVP_DigestInit for the reasoning out of following code */
     EVP_MD_CTX *mdctx;
     const EVP_MD *md;
     unsigned int md_len;
-    // uint8_t i;
+    uint8_t i;
     
     /* Mutex Lock from here -> Critical Section */
     md = EVP_get_digestbyname("sha256");
@@ -85,10 +91,21 @@ void Hash256Bytes(char *Message2Hash, unsigned char *md_value, int SizeOfMessage
     EVP_DigestFinal_ex(mdctx, md_value, &md_len);
     EVP_MD_CTX_free(mdctx);
 
-    //printf("Digest is: ");
-    // for (i = 0; i < md_len; i++)
-        // printf("%02x", md_value[i]);
-    // printf("\n");
+    printf("Digest is: ");
+    for (i = 0; i < md_len; i++)
+        printf("%02x", md_value[i]);
+    printf("\n");
+}
+
+void *start_hashing(void* arg)
+{
+    char a[257];
+    pthread_mutex_lock(&mutex);
+    fgets(a, 256, fp);
+    counter++;
+    pthread_mutex_unlock(&mutex);
+    Hash256Bytes(a, md_value_global[counter], 256);
+    return NULL;
 }
 
 int main(int argc, char**argv)
@@ -96,7 +113,6 @@ int main(int argc, char**argv)
     int i;
     uint16_t k;
     uint8_t j,l;
-    char a[257];
     // char b[65];
     // long int m;
     
@@ -124,21 +140,25 @@ int main(int argc, char**argv)
        fprintf(stderr, "cannot set exit function\n");
        exit(EXIT_FAILURE);
     }
-    
+    //Create a thread group the size of MAX_CORES
+    thread_group= malloc(sizeof(pthread_t) * MAX_CORES);
     /* Start Actual Implementation via for loop so that it will easier to migrate to pthread in future*/
     /* Run over 4 M */
     for(j=0; j<4; j++)
     {
-        /* Run over 1k*1k = 1M */
-        for(k=0;k<1024;k++)
+        /* Run over 2k*0.5k = 1M */
+        for(k=0;k<512;k++)
         {
-            /* Run over 256 * 4 bytes = 1k */
-            for(l=0; l<4; l++)
+            /* Run over 256 * 8 bytes = 2k */
+            // start all threads
+            for(l=0; l<MAX_CORES; l++)
             {
-                fgets(a, 256, fp);
-                Hash256Bytes(a, md_value_global[counter], 256);
-                counter++;
-                printf("Current Counter Value is: %ld\n", counter);
+                pthread_create(&thread_group[i], NULL, start_hashing, NULL);
+            }
+            // wait for all threads to sync up
+            for(l=0; l<MAX_CORES; l++)
+            {
+                pthread_join(thread_group[i], NULL);
             }
         }
     }
