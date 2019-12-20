@@ -1,34 +1,40 @@
+/**************************************************************************
+ Author: Akshay Krishna Upendran
+ BUILD COMMAND: Windows -> gcc %1 -Wall -Wextra -pedantic-errors -o %1.exe
+                Linux   -> gcc %1 -Wall -Wextra -pedantic-errors -o %1
+***************************************************************************/
+
+
 /* Headers */
 #include <stdlib.h>
 #include <stdio.h>
-#include <string.h>
 #include <stdint.h>
-/* High Level OpenSSL Header */
-#include <openssl/evp.h>
-/* Use Low Level header in extreme case*/
-/* #include <openssl/sha.h> */
+
+/* Openssl is not readily available in windows */
+/* Windows expects us to use CNG */
+/* https://docs.microsoft.com/en-us/windows/win32/seccng/cng-portal */
+/* https://docs.microsoft.com/en-us/windows/win32/seccng/creating-a-hash-with-cng */
+#include <windows.h>
+#include <bcrypt.h>
 
 /* Configuration Defines */
 /* #define CREATE_BINARY_FILE */
 
 /* Variables */
-FILE *fp;
-unsigned char md_value_global[16384][32];
-long int counter=0;
+static FILE *fp;
 
 /* Declarations */
 #ifdef CREATE_BINARY_FILE
 void CreateBinaryFile(char *argv);
 #endif
 void cleanup();
-void Hash256Bytes(char *Message2Hash, unsigned char *md_value, int SizeOfMessage);
 
 /* Implementations */
 #ifdef CREATE_BINARY_FILE
 void CreateBinaryFile(char *argv)
 {
-    uint16_t j,k;
-    uint8_t i=1, l;
+    uint16_t KbCounter_ui16, ByteCounter_ui16;
+    uint8_t Value2Write_ui08=0, MbCounter_ui08;
     fp = fopen(argv, "wb");
     if(fp == NULL)
     {
@@ -36,15 +42,23 @@ void CreateBinaryFile(char *argv)
         exit(EXIT_FAILURE);
     }
     /* Write 4MB byte by byte -> just do somw junk way not useful code*/
-    for(l=0; l<4; l++)
+    for(MbCounter_ui08=0; MbCounter_ui08<4; MbCounter_ui08++)
     {
         /* Write 1 MB */
-        for(k=0; k<1024; k++)
+        for(KbCounter_ui16=0; KbCounter_ui16<1024; KbCounter_ui16++)
         {
             /* Write 1KB */
-            for(j=0; j<1024; j++)
+            for(ByteCounter_ui16=0; ByteCounter_ui16<1024; ByteCounter_ui16++)
             {
-                fprintf(fp, "%d", i);
+                fprintf(fp, "%d", Value2Write_ui08);
+                if(Value2Write_ui08!=9)
+                {
+                    Value2Write_ui08++;
+                }
+                else
+                {
+                    Value2Write_ui08=0;
+                }
             }
         }
     }
@@ -55,6 +69,133 @@ void CreateBinaryFile(char *argv)
 }    
 #endif
 
+void CalculateSHA256()
+{
+    BCRYPT_ALG_HANDLE       hAlg            = NULL;
+    BCRYPT_HASH_HANDLE      hHash           = NULL;
+    NTSTATUS                status          = STATUS_UNSUCCESSFUL;
+    DWORD                   cbData          = 0,
+                            cbHash          = 0,
+                            cbHashObject    = 0;
+    PBYTE                   pbHashObject    = NULL;
+    PBYTE                   pbHash          = NULL;
+
+    //open an algorithm handle
+    if(!NT_SUCCESS(status = BCryptOpenAlgorithmProvider(
+                                                &hAlg,
+                                                BCRYPT_SHA256_ALGORITHM,
+                                                NULL,
+                                                0)))
+    {
+        wprintf(L"**** Error 0x%x returned by BCryptOpenAlgorithmProvider\n", status);
+        goto Cleanup;
+    }
+
+    //calculate the size of the buffer to hold the hash object
+    if(!NT_SUCCESS(status = BCryptGetProperty(
+                                        hAlg, 
+                                        BCRYPT_OBJECT_LENGTH, 
+                                        (PBYTE)&cbHashObject, 
+                                        sizeof(DWORD), 
+                                        &cbData, 
+                                        0)))
+    {
+        wprintf(L"**** Error 0x%x returned by BCryptGetProperty\n", status);
+        goto Cleanup;
+    }
+
+    //allocate the hash object on the heap
+    pbHashObject = (PBYTE)HeapAlloc (GetProcessHeap (), 0, cbHashObject);
+    if(NULL == pbHashObject)
+    {
+        wprintf(L"**** memory allocation failed\n");
+        goto Cleanup;
+    }
+
+   //calculate the length of the hash
+    if(!NT_SUCCESS(status = BCryptGetProperty(
+                                        hAlg, 
+                                        BCRYPT_HASH_LENGTH, 
+                                        (PBYTE)&cbHash, 
+                                        sizeof(DWORD), 
+                                        &cbData, 
+                                        0)))
+    {
+        wprintf(L"**** Error 0x%x returned by BCryptGetProperty\n", status);
+        goto Cleanup;
+    }
+
+    //allocate the hash buffer on the heap
+    pbHash = (PBYTE)HeapAlloc (GetProcessHeap (), 0, cbHash);
+    if(NULL == pbHash)
+    {
+        wprintf(L"**** memory allocation failed\n");
+        goto Cleanup;
+    }
+
+    //create a hash
+    if(!NT_SUCCESS(status = BCryptCreateHash(
+                                        hAlg, 
+                                        &hHash, 
+                                        pbHashObject, 
+                                        cbHashObject, 
+                                        NULL, 
+                                        0, 
+                                        0)))
+    {
+        wprintf(L"**** Error 0x%x returned by BCryptCreateHash\n", status);
+        goto Cleanup;
+    }
+    
+
+    //hash some data
+    if(!NT_SUCCESS(status = BCryptHashData(
+                                        hHash,
+                                        (PBYTE)rgbMsg,
+                                        sizeof(rgbMsg),
+                                        0)))
+    {
+        wprintf(L"**** Error 0x%x returned by BCryptHashData\n", status);
+        goto Cleanup;
+    }
+    
+    //close the hash
+    if(!NT_SUCCESS(status = BCryptFinishHash(
+                                        hHash, 
+                                        pbHash, 
+                                        cbHash, 
+                                        0)))
+    {
+        wprintf(L"**** Error 0x%x returned by BCryptFinishHash\n", status);
+        goto Cleanup;
+    }
+
+    wprintf(L"Success!\n");
+
+Cleanup:
+
+    if(hAlg)
+    {
+        BCryptCloseAlgorithmProvider(hAlg,0);
+    }
+
+    if (hHash)    
+    {
+        BCryptDestroyHash(hHash);
+    }
+
+    if(pbHashObject)
+    {
+        HeapFree(GetProcessHeap(), 0, pbHashObject);
+    }
+
+    if(pbHash)
+    {
+        HeapFree(GetProcessHeap(), 0, pbHash);
+    }
+
+}
+
 void cleanup()
 {
     if(0 != fclose(fp))
@@ -63,43 +204,11 @@ void cleanup()
     }
 }
 
-void Hash256Bytes(char *Message2Hash, unsigned char *md_value, int SizeOfMessage)
-{
-    /* Refer man EVP_DigestInit for the reasoning out of following code */
-    EVP_MD_CTX *mdctx;
-    const EVP_MD *md;
-    unsigned int md_len;
-    // uint8_t i;
-    
-    /* Mutex Lock from here -> Critical Section */
-    md = EVP_get_digestbyname("sha256");
-    if (md == NULL) {
-        printf("Unknown message digest %s\n", "sha256");
-        exit(1);
-    }
-
-    mdctx = EVP_MD_CTX_new();
-    EVP_DigestInit_ex(mdctx, md, NULL);
-    
-    EVP_DigestUpdate(mdctx, Message2Hash, SizeOfMessage);
-    EVP_DigestFinal_ex(mdctx, md_value, &md_len);
-    EVP_MD_CTX_free(mdctx);
-
-    //printf("Digest is: ");
-    // for (i = 0; i < md_len; i++)
-        // printf("%02x", md_value[i]);
-    // printf("\n");
-}
-
 int main(int argc, char**argv)
 {
-    int i;
-    uint16_t k;
-    uint8_t j,l;
-    char a[257];
-    // char b[65];
-    // long int m;
-    
+    uint8_t MbCounter_ui08, NumberOf256bytesChunk_ui08;
+    uint16_t KbCounter_ui16;
+    int RetVal_i=1;
     /* Check Input Arguments */
     if(2 != argc)
     {
@@ -114,48 +223,31 @@ int main(int argc, char**argv)
     fp = fopen(argv[1], "rb");
     if(fp == NULL)
     {
-        perror("Failed to create file");
+        perror("Failed to read file");
         exit(EXIT_FAILURE);
     }
     /* Register callback to cleanup on any kind of closure*/
-    i = atexit(cleanup);
-    if (i != 0)
+    RetVal_i = atexit(cleanup);
+    if (RetVal_i != 0)
     {
        fprintf(stderr, "cannot set exit function\n");
        exit(EXIT_FAILURE);
     }
     
-    /* Start Actual Implementation via for loop so that it will easier to migrate to pthread in future*/
-    /* Run over 4 M */
-    for(j=0; j<4; j++)
+    for(MbCounter_ui08=0; MbCounter_ui08<4; MbCounter_ui08++)
     {
         /* Run over 1k*1k = 1M */
-        for(k=0;k<1024;k++)
+        for(KbCounter_ui16=0;KbCounter_ui16<1024;KbCounter_ui16++)
         {
             /* Run over 256 * 4 bytes = 1k */
-            for(l=0; l<4; l++)
+            for(NumberOf256bytesChunk_ui08=0; NumberOf256bytesChunk_ui08<4; NumberOf256bytesChunk_ui08++)
             {
-                fgets(a, 256, fp);
+                /* fgets(a, 256, fp);
                 Hash256Bytes(a, md_value_global[counter], 256);
                 counter++;
-                printf("Current Counter Value is: %ld\n", counter);
+                printf("Current Counter Value is: %ld\n", counter); */
             }
         }
     }
- 
-    // Implemenation to be confirmed with baliga
-    // /* Now we have all hashes -> lets Hash the hashes */
-    // for(; counter/2 !=0;)
-    // {
-        // for(m=0; m<16384;m+=2)
-        // {
-            // printf("Counter Value now is:%ld and m is %ld\n", counter, m);
-            // memcpy(b, md_value_global[m], 32);
-            // strncat(b, (char*)md_value_global[m+1], 32);
-            // Hash256Bytes(b, md_value_global[m], 64);
-        // }
-        // counter = counter/2;
-    // }
-    /* we will have m/2 hashes till now */
     return EXIT_SUCCESS;
 }
