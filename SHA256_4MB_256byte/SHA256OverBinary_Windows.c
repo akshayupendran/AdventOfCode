@@ -14,6 +14,7 @@
 /* Windows expects us to use CNG */
 /* https://docs.microsoft.com/en-us/windows/win32/seccng/cng-portal */
 /* https://docs.microsoft.com/en-us/windows/win32/seccng/creating-a-hash-with-cng */
+/* https://docs.microsoft.com/en-us/windows/win32/api/bcrypt/ */
 #include <windows.h>
 #include <bcrypt.h>
 
