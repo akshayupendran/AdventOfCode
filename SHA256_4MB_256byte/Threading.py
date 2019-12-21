@@ -39,7 +39,7 @@ def main():
             process.join()
         hashes = hashes + 8
 
-    print(md_list)
+    print(*md_list, sep = ", ")
 
 
 if __name__ == '__main__':
