@@ -12,6 +12,7 @@ def calculate_sha2_over_binary():
     global binary
     array = binary.read(256)
     md_list.append(sha256(array).hexdigest())
+    # print("Updated List:", md_list)
 
 
 def main():
@@ -22,9 +23,9 @@ def main():
     # 2. Setup Multiprocessing -> Create a list of threads which we will start
     threads = []
     # 3. Create a loop to calculate 16384 hashes - use multi-threading
-    number_of_threads = 0
     hashes = 0
     while hashes < 16384:
+        number_of_threads = 0
         while number_of_threads < 8:
             # 4. In Each Loop Step Start a thread
             # when the calculation is done, the result is stored in a global variable
@@ -32,7 +33,7 @@ def main():
             process.start()
             threads.append(process)
             number_of_threads = number_of_threads + 1
-
+        # print("Wait for processes")
         # We now pause execution on the main thread by 'joining' all of our started threads.
         # This ensures that each has finished processing the hash.
         for process in threads:
