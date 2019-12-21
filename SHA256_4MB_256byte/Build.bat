@@ -1,6 +1,2 @@
 @ECHO OFF
-SETLOCAL
-SET CURRENT_DIR=%~dp0
-gcc -I%CURRENT_DIR%\openssl-1.1.1d-win64-mingw\include\openssl CalculateOverBinary_pthread.c -o CalculateOverBinary_pthread.exe -lcrypto
-pause
-ENDLOCAL
+gcc -I "C:\Program Files\OpenSSL-Win64\include" -L "C:\Program Files\OpenSSL-Win64\lib" -l openssl SHA256OverBinary_Windows.c -o SHA256OverBinary_Windows.exe
