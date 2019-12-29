@@ -3,7 +3,7 @@
 #include <stdlib.h>
 
 #define ENABLE_PART_ONE
-#define ENABLE_PART_TWO
+//#define ENABLE_PART_TWO
 
 FILE* fp;
 
@@ -14,7 +14,7 @@ void cleanup()
 
 void MainProcess()
 {
-    char     c;
+    char    c;
     int32_t CurrentFloor_lli = 0;
 #ifdef ENABLE_PART_TWO
     uint32_t InputNumber_lli = 0;
@@ -55,6 +55,7 @@ void MainProcess()
     }
 #endif
 }
+
 int main(int argc, char** argv)
 {
     /* Check if input file name exists */
@@ -78,6 +79,9 @@ int main(int argc, char** argv)
 /* Part 1 */
 #if ((defined ENABLE_PART_ONE) || (defined ENABLE_PART_TWO))
     MainProcess();
+#else
+    #error Either ENABLE_PART_ONE or ENABLE_PART_TWO must be defined!!
 #endif
+
     return 0;
 }
