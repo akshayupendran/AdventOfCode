@@ -115,7 +115,6 @@ void ReadInputValueAndExecuteCommand()
         if( !strncmp( input, "deal with", 9 ) )
         {
             n = atoi(input + 19);
-            //printf("n1 is %d\n", n);
             DealWithIncrementN(n);
         } else if ( !strncmp( input, "deal", 4 ) ) {
             // no number
@@ -131,9 +130,8 @@ void ReadInputValueAndExecuteCommand()
 
 int main(int argc, char **argv)
 {
-    printf("Ho");
-    uint64_t i=0;
-    uint64_t Counter_ui16;
+    // uint64_t i=0;
+    // uint64_t Counter_ui16;
     if(argc!=2)
     {
         printf("Please enter exactly one Input File Name");
@@ -147,7 +145,8 @@ int main(int argc, char **argv)
         perror("Main:opening of Input.txt-> failed");
         return EXIT_FAILURE;
     }
-    FactoryOrder();
+    /* Track the given input card */
+
     while (i< 101741582076661)
     {
         ReadInputValueAndExecuteCommand();

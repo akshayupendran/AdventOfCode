@@ -15,7 +15,7 @@ AccessModifierOffset: -1
 AlignConsecutiveMacros: true
 AlignConsecutiveAssignments: true
 AlignConsecutiveDeclarations: true
-AlignTrailingComments: false
+AlignTrailingComments: true
 AllowShortFunctionsOnASingleLine: None
 AllowShortLambdasOnASingleLine: None
 AlwaysBreakBeforeMultilineStrings: true
