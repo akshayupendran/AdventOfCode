@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../cfg/main_cfg.h
+
+../include/main.h
+stdint.h
+-
+stdio.h
+-
+stdlib.h
+-
+main_cfg.h
+../include/main_cfg.h
+
+F:/GitHub/AdventOfCode/2015/Day1/src/main.c
+main.h
+F:/GitHub/AdventOfCode/2015/Day1/src/main.h
+
+F:/GitHub/AdventOfCode/2015/Day1/src/process.c
+main.h
+F:/GitHub/AdventOfCode/2015/Day1/src/main.h
+

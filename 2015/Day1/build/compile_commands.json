@@ -1,0 +1,12 @@
+[
+{
+  "directory": "F:/GitHub/AdventOfCode/2015/Day1/build",
+  "command": "C:\\MinGW\\bin\\gcc.exe  @CMakeFiles/2015_Day1.dir/includes_C.rsp -g   -o CMakeFiles\\2015_Day1.dir\\src\\main.c.obj   -c F:\\GitHub\\AdventOfCode\\2015\\Day1\\src\\main.c",
+  "file": "F:/GitHub/AdventOfCode/2015/Day1/src/main.c"
+},
+{
+  "directory": "F:/GitHub/AdventOfCode/2015/Day1/build",
+  "command": "C:\\MinGW\\bin\\gcc.exe  @CMakeFiles/2015_Day1.dir/includes_C.rsp -g   -o CMakeFiles\\2015_Day1.dir\\src\\process.c.obj   -c F:\\GitHub\\AdventOfCode\\2015\\Day1\\src\\process.c",
+  "file": "F:/GitHub/AdventOfCode/2015/Day1/src/process.c"
+}
+]
